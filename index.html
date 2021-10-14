@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">  
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    /* own css */
+
+    * {
+      box-sizing: border-box;
+      /* border: 1px solid red; */
+    }
+
+    html {
+      height: 100%;      
+    }
+
+    body {
+      /* background image: */
+      background-color: hsl(225, 100%, 94%);
+      background-image: url(images/pattern-background-desktop.svg);
+      background-repeat: repeat-x;
+
+      /* font:  */
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: bold;
+
+      /* for centering the client div: */
+      margin: 0;
+      min-height: 100%; 
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 1.5em;
+      margin-left: 1em;
+      margin-right: 1em;
+      max-width: 375px;
+      overflow: hidden;
+      text-align: center; 
+      -webkit-box-shadow: 0px 9px 11px 5px #CFD1FF; 
+      box-shadow: 0px 9px 11px 5px #CFD1FF;      
+    }
+
+    .heroImage {
+      width: 100%;
+    }
+
+    .contents {
+      padding: 2.5em 2.5em 2.5em 2.5em;
+      color: hsl(223, 47%, 23%);
+    }
+
+    h2 {
+      font-weight: 900;
+      margin: 0 auto;
+    }
+
+    .summary {
+      color: hsl(224, 23%, 55%);
+      font-weight: 500;
+      font-size: small;
+      /* margin-top: 0; */
+    }
+
+
+    .plan {
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 1em;
+      padding: 1.2em;
+      display: flex;
+      align-items: center;     
+      /* height: 20em;  */
+    }
+
+    /* text "Annual Plan" */
+    h4 {
+      margin: 0 0 .3em 0;
+      font-weight: 900;
+      font-size: small;
+    }
+
+    .price {
+      color: hsl(224, 23%, 55%);
+      margin: .3em 0 0 0;
+      font-size: small;
+    }
+
+    .pricePlanSection {
+      margin-left: 1em;
+    }
+
+    .changeLinkSection {
+      margin: auto 0 auto auto;
+      font-size: small;
+    }
+
+    .proceedBtn {
+      background-color: hsl(245, 75%, 52%);
+      border: none;
+      border-radius: .5em;
+      color: white;
+      display: block;
+      font-weight: bold;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      padding: 1em;
+      width: 100%;
+
+      -webkit-box-shadow: 0px 28px 20px 0px rgba(56,41,224,0.20); 
+      box-shadow: 0px 28px 20px 0px rgba(56,41,224,0.20);      
+    }
+
+    button.proceedBtn:hover {
+      cursor: pointer;
+    }
+
+    .cancelUrl {
+      color: hsl(224, 23%, 55%);
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1em;
+      font-size: small;
+    }
+
+    .attribution {
+    position: fixed;
+    bottom: 0;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="card"> 
+    <img class="heroImage" src="images/illustration-hero.svg" alt="">
+
+    <div class="contents">
+      <h2>Order Summary</h2>
+      <p class="summary">
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p>
+
+      <div class="plan">
+        <div class="planSection">
+          <img src="images/icon-music.svg" alt="">
+        </div>
+        <div class="pricePlanSection">
+          <h4>
+            Annual Plan
+          </h4>
+          <p class="price">
+            $59.99/year  
+          </p>          
+        </div>
+        <div class="changeLinkSection">
+          <a href="#">Change</a>  
+        </div>
+      </div>
+
+      <button class="proceedBtn">Proceed to Payment</button>
+      <div>
+        <a class="cancelUrl" href="#">Cancel Order</a>     
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Erland van Olmen</a>.
+  </div>
+</body>
+</html>

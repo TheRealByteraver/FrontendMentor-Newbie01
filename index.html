@@ -68,7 +68,7 @@
       color: hsl(223, 47%, 23%);
     }
 
-    h2 {
+    h1 {
       font-weight: 900;
       margin: 0 auto;
     }
@@ -91,7 +91,7 @@
     }
 
     /* text "Annual Plan" */
-    h4 {
+    h2 {
       margin: 0 0 .3em 0;
       font-weight: 900;
       font-size: small;
@@ -129,6 +129,7 @@
     }
 
     button.proceedBtn:hover {
+      background-color: hsl(245, 75%, 52%, .75);
       cursor: pointer;
     }
 
@@ -140,6 +141,10 @@
       font-size: small;
     }
 
+    .cancelUrl:hover {
+      color: black;
+    }    
+
     .attribution {
     position: fixed;
     bottom: 0;
@@ -150,11 +155,12 @@
 </head>
 <body>
 
-  <div class="card"> 
-    <img class="heroImage" src="images/illustration-hero.svg" alt="">
+  <main class="card"> 
+
+    <img class="heroImage" src="images/illustration-hero.svg" alt="man dancing to music through headphones">
 
     <div class="contents">
-      <h2>Order Summary</h2>
+      <h1>Order Summary</h1>
       <p class="summary">
         You can now listen to millions of songs, audiobooks, and podcasts on any 
         device anywhere you like!
@@ -165,9 +171,9 @@
           <img src="images/icon-music.svg" alt="">
         </div>
         <div class="pricePlanSection">
-          <h4>
+          <h2>
             Annual Plan
-          </h4>
+          </h2>
           <p class="price">
             $59.99/year  
           </p>          
@@ -182,13 +188,12 @@
         <a class="cancelUrl" href="#">Cancel Order</a>     
       </div>
     </div>
-  </div>
-
-
+  </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Erland van Olmen</a>.
-  </div>
+  </footer>
+
 </body>
 </html>
